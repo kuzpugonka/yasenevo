@@ -1,0 +1,451 @@
+/* montserrat-regular - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/montserrat-v26-cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/Montserrat-Regular.ttf");
+}
+/* montserrat-500 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/montserrat-v26-cyrillic-500.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/Montserrat-Medium.ttf");
+}
+/* montserrat-600 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/montserrat-v26-cyrillic-600.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url(../fonts/Montserrat-SemiBold.ttf);
+}
+/* montserrat-700 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/montserrat-v26-cyrillic-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("../fonts/Montserrat-Bold.ttf");
+}
+
+:root {
+  --Grayscale-White: #fff;
+  --Grayscale-Black: #000;
+  --Grayscale-50: #333;
+  --Grayscale-30: #3c3c3c;
+  --Grayscale-10: #9c9c9c;
+  --Primary-Blue-100: #2c3878;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.container {
+  --width: 1140px;
+  --padding: 30px;
+  width: calc(var(--width) + var(--padding) * 2);
+  margin: 100px auto 0;
+}
+
+.button {
+  padding: 14px 32px;
+  color: var(--Grayscale-White, #fff);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5; /* 21px */
+  background: var(--Primary-Blue-100, #2c3878);
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  color: var(--Grayscale-50, #333);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.4; /* 100.8px */
+}
+
+h2 {
+  margin-top: 20px;
+  color: var(--Grayscale-50, #333);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.4; /* 50.4px */
+}
+
+h3 {
+  color: var(--Grayscale-Black, #000);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 24px */
+  text-transform: uppercase;
+}
+
+h4 {
+  color: var(--Grayscale-White, #fff);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.6; /* 76.8px */
+}
+
+p {
+  margin-top: 48px;
+  color: var(--Grayscale-10, #9c9c9c);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6; /* 28.8px */
+}
+.small {
+  margin: 0;
+  color: var(--Grayscale-White, #fff);
+  font-size: 16px;
+}
+
+.header-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.7; /* 54.281px */
+}
+.header__logo-text {
+  color: var(--Grayscale-Black, #000);
+}
+
+.header__nav {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  display: inline;
+  margin-left: 40px;
+}
+
+.navigation-link {
+  text-decoration: none;
+
+  color: var(--Grayscale-50, #333);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6; /* 25.6px */
+}
+
+.navigation-link_general {
+  font-weight: 600;
+  line-height: 1.4; /* 22.4px */
+}
+
+.header__btn-phone {
+  margin-left: 50px;
+  margin-right: 12px;
+  border: 1px solid var(--Grayscale-30, #3c3c3c);
+}
+
+.header__btn-phone-icon {
+  display: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero__title {
+  width: 62%;
+}
+
+.hero__benefits {
+  position: absolute;
+  top: 140px;
+  left: 865px;
+
+  width: 252px;
+  padding: 45px 0;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 63px;
+
+  background: var(--Primary-Blue-100, #2c3878);
+}
+
+.hero__benefit {
+  text-align: center;
+}
+
+.hero__img-decor {
+  position: absolute;
+  top: 50px;
+  left: 743px;
+}
+
+.about {
+  position: relative;
+}
+
+.about__img-decor {
+  position: absolute;
+  top: 10px;
+  left: 115px;
+}
+
+.about__text {
+  width: 55%;
+}
+
+.about__title {
+}
+
+.about__desc {
+}
+
+.about__benefits {
+  margin-top: 100px;
+  padding: 55px 68px;
+  height: 460px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 25px 120px;
+  background: var(--Primary-Blue-100, #2c3878);
+}
+
+.about__benefit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.about__benefit-desc {
+  width: 345px;
+  color: var(--Grayscale-White, #fff);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2; /* 24px */
+}
+
+.about__text_down {
+  margin: 37px 73px 100px 0;
+  width: 53%;
+  float: right;
+}
+
+.about__btn-more {
+  margin-top: 17px;
+}
+
+.panorama {
+  /* margin-top: 100px; */
+}
+
+.galery {
+  position: relative;
+}
+
+.galery__img-decor {
+  position: absolute;
+  top: 10px;
+  left: 177px;
+}
+
+.gallery__group {
+  margin-top: 46px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+    "item-1 item-1 item-2 item-3"
+    "item-4 item-5 item-2 item-6";
+  gap: 10px;
+}
+
+.gallery__item {
+  padding: 226px 37px 30px 20px;
+  color: var(--Grayscale-White, #fff);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2; /* 21.6px */
+}
+.gallery__item-1 {
+  padding-right: 185px;
+  grid-area: item-1;
+  background-image: url(../img/gellery-1.png);
+}
+.gallery__item-2 {
+  grid-area: item-2;
+  padding-top: 500px;
+  background-image: url(../img/gellery-2.png);
+}
+.gallery__item-3 {
+  grid-area: item-3;
+  background-image: url(../img/gellery-3.png);
+}
+.gallery__item-4 {
+  grid-area: item-4;
+  padding-top: 204px;
+  background-image: url(../img/gellery-4.png);
+}
+.gallery__item-5 {
+  padding-top: 204px;
+  grid-area: item-5;
+  background-image: url(../img/gellery-5.png);
+}
+.gallery__item-6 {
+  padding-top: 204px;
+  grid-area: item-6;
+  background-image: url(../img/gellery-6.png);
+}
+
+.info {
+  position: relative;
+}
+
+.info__title {
+  width: 50%;
+}
+
+.info__img-decor {
+  position: absolute;
+  top: 11px;
+  left: 115px;
+}
+
+.info__block {
+  display: flex;
+}
+
+.info__block-ul {
+  margin: 20px 16px 46px 27px;
+  width: 53%;
+}
+
+.info__block-desc {
+  color: var(--Grayscale-10, #9c9c9c);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+
+.info__btn-download {
+  margin-bottom: 36px;
+}
+
+.footer {
+  background: var(--Primary-Blue-100, #2c3878);
+}
+
+.footer__container {
+  padding: 77px 0 50px;
+  display: grid;
+  grid-template-areas:
+    "text form"
+    "logo phone";
+  gap: 110px 120px;
+}
+
+.footer__text {
+  grid-area: text;
+  max-width: 576px;
+  margin-top: 0;
+
+  color: var(--Grayscale-White, #fff);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2; /* 38.4px */
+}
+.form {
+  margin-top: 8px;
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form__input {
+  width: 334px;
+  padding: 12px 0 12px 15px;
+
+  color: var(--Grayscale-White, #fff);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6; /* 25.6px */
+
+  border: 1px solid #fff;
+  background: var(--Primary-Blue-100, #2c3878);
+
+  cursor: pointer;
+}
+.form__input::placeholder {
+  color: var(--Grayscale-White, #fff);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6; /* 25.6px */
+}
+.footer__logo {
+  grid-area: logo;
+}
+.footer__logo-text {
+  color: var(--Grayscale-White, #fff);
+}
+.footer__phone {
+  grid-area: phone;
+}
+.footer__phone-text {
+  color: var(--Grayscale-White, #fff);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5; /* 48px */
+}
+.footer__btn {  
+  width: 250px;
+
+  background: var(--Grayscale-White, #fff);
+  color: var(--Grayscale-Black, #000);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 21px */
+}
